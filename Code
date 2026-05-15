@@ -1,4 +1,5 @@
-# Unsatisfactory for the challenge.
+# I struggled so much figuring out that each condtion must be in one block connected by
+# elif. And that you can add more if's within an elif.
 
 distance_mi =  0
 is_raining = True
@@ -8,14 +9,19 @@ has_ride_share_app = True
 
 if distance_mi == 0:
     print('False')
-
-if distance_mi >= 0.5:
-    if not is_raining:
+elif distance_mi >= 0.5:
+    if is_raining == False:
         print('True')
     else:
         print('False')
-
-if distance_mi > 1:
-    if distance <= 6:
+elif distance_mi > 1:
+    if distance_mi < 6:
         if is_raining and has_bike == False:
-            print('False')
+            print(False)
+            if not is_raining and has_bike == False:
+                print('False')
+        else:
+            print('True')
+if distance_mi > 6:
+    if not has_car and ride_share_app == False:
+        print('False')
