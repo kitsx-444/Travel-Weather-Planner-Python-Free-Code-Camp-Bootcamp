@@ -1,3 +1,5 @@
+# Had a silly typo
+
 distance_mi =  0
 is_raining = True
 has_bike = True
@@ -16,7 +18,7 @@ elif distance_mi > 1:
         if has_bike and is_raining == False:
             print('True')
         else:
-            print('False)')
+            print('False')
 elif distance_mi > 6:
     if has_car == False and has_ride_share_app == False:
         print('False')
