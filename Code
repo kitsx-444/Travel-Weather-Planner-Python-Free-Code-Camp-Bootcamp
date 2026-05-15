@@ -1,3 +1,5 @@
+# Unsatisfactory for the challenge.
+
 distance_mi =  0
 is_raining = True
 has_bike = True
@@ -13,7 +15,7 @@ if distance_mi >= 0.5:
     else:
         print('False')
 
-if distance_mi == 2:
-    if distance == 6 and is_raining:
-        if not has_bike:
+if distance_mi > 1:
+    if distance <= 6:
+        if is_raining and has_bike == False:
             print('False')
