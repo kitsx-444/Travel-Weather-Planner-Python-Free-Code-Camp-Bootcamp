@@ -1,4 +1,4 @@
-# Had a silly typo
+# Problem 19 solved
 
 distance_mi =  0
 is_raining = True
@@ -8,9 +8,12 @@ has_ride_share_app = True
 
 if distance_mi == 0:
     print('False')
-elif distance_mi > 0 and distance_mi <= 1:
-    if is_raining == False:
-        print('True')
+elif distance_mi > 0: 
+    if distance_mi <= 1:
+        if is_raining == False:
+            print('True')
+        else:
+            print('False')
     else:
         print('False')
 elif distance_mi > 1:
