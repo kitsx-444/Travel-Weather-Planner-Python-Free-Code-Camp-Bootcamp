@@ -1,5 +1,6 @@
-# I struggled so much figuring out that each condtion must be in one block connected by
-# elif. And that you can add more if's within an elif.
+#Failed:19. When the distance is between 1 mile (excluded) and 6 miles (included), it is not raining but no bike is available, the program should print False.
+# Failed:23. When the distance is greater than 6 miles and no car nor a ride share app is available, the program should print False.
+Show less
 
 distance_mi =  0
 is_raining = True
@@ -18,10 +19,12 @@ elif distance_mi > 1:
     if distance_mi < 6:
         if is_raining and has_bike == False:
             print(False)
-            if not is_raining and has_bike == False:
-                print('False')
-        else:
-            print('True')
-if distance_mi > 6:
-    if not has_car and ride_share_app == False:
+elif distance_mi > 1:
+    if distance_mi < 6:
+        if not is_raining and has_bike == False:
+            print('False')
+elif distance_mi > 6:
+    if not has_car or has_ride_share_app:
         print('False')
+    else:
+        print('True')
